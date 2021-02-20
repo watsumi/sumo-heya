@@ -42,3 +42,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the SumoHeya project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sumo_heya/blob/master/CODE_OF_CONDUCT.md).
+
+
+
+GitHub issues:	GitHub issues badge	https://img.shields.io/github/issues/watsumi/sumo-heya
+GitHub forks:	GitHub forks badge	https://img.shields.io/github/forks/watsumi/sumo-heya
+GitHub stars:	GitHub stars badge	https://img.shields.io/github/stars/watsumi/sumo-heya
+GitHub license:	GitHub license badge	https://img.shields.io/github/license/watsumi/sumo-heya

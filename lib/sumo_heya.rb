@@ -1,4 +1,6 @@
 require "sumo_heya/version"
+require "my_rubygem/configuration"
+require "my_rubygem/base"
 
 module SumoHeya
   
@@ -9,12 +11,23 @@ module SumoHeya
       def find_by_shikona(name)
         result = RIKISHI.select {|i| i[:rikishi] == name}
       end
+
       def find_by_room(name)
         result = RIKISHI.select {|i| i[:room] == name}
       end
+
       def find_by_birthplace(name)
         result = RIKISHI.select {|i| i[:birthplace] == name}
       end
+
+      def configure
+        yield configuration
+      end
+  
+      def configuration
+        @configuration ||= MyRubygem::Configuration.new
+      end
+
     end
   end
 

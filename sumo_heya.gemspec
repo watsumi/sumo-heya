@@ -2,7 +2,7 @@ require_relative 'lib/sumo_heya/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sumo_heya"
-  spec.version       = SumoHeya::VERSION
+  spec.version       = "0.1.0"
   spec.authors       = ["watsumi"]
   spec.email         = ["w.utsumi2@gmail.com"]
 

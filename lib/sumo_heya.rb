@@ -3,7 +3,7 @@ require "sumo_heya/version"
 module SumoHeya
   
   class Rikishi
-    attr_reader :name, :room, :birthplace
+    attr_reader :name, :room, :birthplace, :id
 
     class << self
       def find_by_shikona(name)
@@ -18,6 +18,9 @@ module SumoHeya
         result = RIKISHI.select {|i| i[:birthplace] == name}
       end
 
+      def find_by_id(num)
+        result = RIKISHI.select {|i| i[:id] == num}
+      end
     end
   end
 

@@ -38,4 +38,14 @@ RSpec.describe SumoHeya do
       :room=>"春日野",
       :yomi=>"とちのしん"}]
   end
+
+  it "idを渡すと力士の名前と相撲部屋を返す" do
+    sumo_heya = SumoHeya::Rikishi.find_by_id(1)
+    expect(sumo_heya).to eq [{:birthplace=>"ジョージア",
+      :bunduke=>"東前頭四枚目",
+      :id=>16,
+      :rikishi=>"栃ノ心",
+      :room=>"春日野",
+      :yomi=>"とちのしん"}]
+  end
 end

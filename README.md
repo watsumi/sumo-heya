@@ -1,6 +1,6 @@
 # SumoHeya
 
-SumoHeya is easily get shikona.
+SumoHeya provide Rikishi's info.  
 You can search Rikishi by 
 
 - SumoHeya(room)

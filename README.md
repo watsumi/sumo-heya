@@ -33,7 +33,7 @@ Case: By BirthPlace
 
 Case: By Shikona
 ```
- SumoHeya::Rikishi.find_by_birthplace('白鵬')
+ SumoHeya::Rikishi.find_by_shikona('白鵬')
 ```
 
 ## License

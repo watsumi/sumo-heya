@@ -1,39 +1,40 @@
 # SumoHeya
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sumo_heya`. To experiment with that code, run `bin/console` for an interactive prompt.
+SumoHeya is easily get shikona.
+You can search Rikishi by 
 
-TODO: Delete this and the text above, and describe your gem
+- SumoHeya(room)
+- Birthplace
+- Shikona
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sumo_heya'
+gem 'sumo_heya', git: 'git@github.com:watsumi/sumo-heya.git'
 ```
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install sumo_heya
-
 ## Usage
 
-TODO: Write usage instructions here
+Case: By SumoHeya(room)
+```
+ SumoHeya::Rikishi.find_by_room('宮城野')
+```
 
-## Development
+Case: By BirthPlace
+```
+ SumoHeya::Rikishi.find_by_birthplace('モンゴル')
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sumo_heya. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/sumo_heya/blob/master/CODE_OF_CONDUCT.md).
-
+Case: By Shikona
+```
+ SumoHeya::Rikishi.find_by_birthplace('白鵬')
+```
 
 ## License
 
